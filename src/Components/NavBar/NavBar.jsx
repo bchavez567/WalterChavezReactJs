@@ -28,14 +28,14 @@ const NavBar = () => {
                 <Nav.Link href="#deets">
                     <CartWigget/>
                 </Nav.Link>
- 
+
         </Nav>
     </Navbar.Collapse>
     </Container>
 </Navbar>
 
 
-    )
+)
 }
 
 export default NavBar
