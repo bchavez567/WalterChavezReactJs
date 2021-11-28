@@ -6,6 +6,18 @@
   height: 40vmin;
   pointer-events: none;
 }
+nav{
+  background-color: #61dafb;
+
+}
+ul{
+  list-style-type: none;
+  margin: 1rem;
+  padding: 0;
+  overflow: hidden;
+  color: rgb(1, 0, 84);
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

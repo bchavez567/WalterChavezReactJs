@@ -5,12 +5,21 @@ const ItemCount = ({inital, stock, onAdd}) => {
     const [count , setCount] = useState(0)
     function Sumar(){
     
-        setCount( count +1 )
+        if (count <5 ){;
+
+            setCount( count + 1)
+
+        }
     
     }
     
     function Restar (){
-        setCount( count - 1)
+
+        if (count >0 ){
+
+            setCount( count - 1)
+
+        }
     }
 
     return (
