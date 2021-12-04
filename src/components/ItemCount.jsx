@@ -1,4 +1,6 @@
 import {useState} from "react";
+import { Card, Button, Row, Col} from 'react-bootstrap';
+
 
 
 export default function ItemCount(props) {
@@ -37,8 +39,9 @@ export default function ItemCount(props) {
                 
                 <button onClick={restarContador}>-</button>
 
-                <button onClick={agregarCarrito}>Agregar al carrito</button>
+                <Button variant="primary" onClick={agregarCarrito}>Agregar al carrito</Button>
 
             </div>
         )
 }
+

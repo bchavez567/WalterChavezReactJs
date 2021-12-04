@@ -20,7 +20,7 @@ export const ListaProductos = [{
 },
 {
     id: 154,
-    title: 'Comwbo 2 Catucs',
+    title: 'Combo 2 Catucs',
     description: '3 piezas a eleccion',
     price: 875.00,
     pictureURL: 'https://www.hola.com/imagenes/decoracion/20200925176052/cultivar-cactus-suculentas-plantas-interior-mc/0-870-634/cultivar-cactus-suculentas-4-a.webp?filter=high',

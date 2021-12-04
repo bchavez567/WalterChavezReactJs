@@ -9,7 +9,7 @@ export default function ItemList(props) {
 
 
     return (
-        <div style={{ width: '25%' }}>
+        <div style={{ width: '100%' }}>
             {props.lista.map((item, index) => {
                 return (
                     <Item key={index} item={item} />
@@ -17,4 +17,5 @@ export default function ItemList(props) {
             })}
         </div>
     )
-}
+};
+
