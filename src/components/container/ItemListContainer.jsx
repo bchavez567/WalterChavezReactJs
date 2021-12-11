@@ -47,9 +47,7 @@ const ItemListContainer = () =>{
     console.log(productos)
     
 
-//ese estado que seteamos en el useState, es el que va a ser la props que el container le va a pasar a ItemList, que será el responsable de mapearlo. Recuerden: darle el mínimo trabajo a cada componente
 
-//seccion ternario del loading: si loading es true, es porque todavía no ejecutamos el finally, entonces la promesa esta en proceso, por lo que mostramos el loading. Si es false, ya se ejecutó el finally, por lo que ya tenemos los datos, y se lo mandamos a ItemList. Sino ItemList va a recibir un undefined (array vacío)
 
     return(
     <>

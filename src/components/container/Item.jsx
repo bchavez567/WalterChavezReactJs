@@ -1,8 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import ItemCount from '../ItemCount';
 import { Link } from 'react-router-dom';
 import { Card, Button, Row, Col} from 'react-bootstrap';
 import {CartContex} from '../CartContex'
+import { getFirestore } from '@firebase/firestore';
 
 
 
@@ -24,6 +25,12 @@ export default function Item({item , id , image, price, title}) {
         setCarrito(temporal);
         console.log(carrito);
     }
+
+
+    useEffect(()=>{
+        const db = getFirestore()
+        const dbQuery = db.collection('Productos').doc('RjcWjzFotSpLpYKJhawi').get
+    }),[])
 
 
     return (
