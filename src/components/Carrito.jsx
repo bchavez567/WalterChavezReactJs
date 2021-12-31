@@ -1,13 +1,13 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect , useState} from "react";
 
 import NavBar from "./NavBar";
 
-import {cartContex} from '../components/CartContex';
-import { Container, ListGroup, Row } from "react-bootstrap";
+import CartContex from "./CartContex";
+import { Container, ListGroup, Row , Col, Image, Nav} from "react-bootstrap";
 
 function Carrito (){
 
-    const [carrito] = useContext(cartContex);
+    const [carrito] = useContext(CartContex);
     let [total , setTotal] = useState (0);
 
     useEffect (()=>{
@@ -21,7 +21,7 @@ function Carrito (){
     return (
 
         <> 
-        <Navegacion>
+        <Nav>
         <Container> 
         {  carrito. map ((item)=>{
             return (
@@ -42,15 +42,10 @@ function Carrito (){
         })}
         <h1>Total a pagar ; {total}</h1>
         </Container>
-        </Navegacion>
+        </Nav>
         </>
-    
     )
-
-
-
-
-
-
-
+    
 }
+
+export default Carrito;

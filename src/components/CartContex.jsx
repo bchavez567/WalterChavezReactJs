@@ -1,6 +1,5 @@
-import React ,{createContex, useState} from "react";
+import React ,{useState, CartContex} from "react";
 
-export const CartContex = createContex ();
 
 export const CartProviver = (props) =>{
     const [carrito , setCarrito] = useState ([]);
@@ -10,3 +9,5 @@ export const CartProviver = (props) =>{
         </CartContex.Provider>
     )
 }
+
+export default CartContex;

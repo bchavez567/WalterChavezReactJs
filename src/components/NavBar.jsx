@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from './CartWidget';
 
 import { Link } from 'react-router-dom';
@@ -25,7 +24,7 @@ function NavBar() {
                 <Link style={{textDecoration: "none"}} to="/categoria/exterior">Cactus</Link> 
             </Nav.Link>
             <Nav.Link>
-                <Link style={{textDecoration: "none"}} to="/carrito">Carrito</Link> 
+                <Link style={{textDecoration: "none"}} to="./Carrito">Carrito</Link> 
             </Nav.Link>
             </Nav>
         <CartWidget/>
